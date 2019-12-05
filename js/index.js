@@ -64,8 +64,9 @@ someThing.textContent = "Something";
 anyThing.textContent = "Anything";
 
 const navBar = document.querySelector('nav');
-
-navBar.appendChild(someThing).style.color = "green";
+someThing.style.color = "green";
+anyThing.style.color = "green";
+navBar.appendChild(someThing);
 navBar.prepend(anyThing);
 
 
@@ -105,6 +106,3 @@ paragraphs[7].textContent = "sales@greatidea.co";
 paragraphs[8].textContent = "Copyright Great Idea! 2018"
 
 paragraphs[5].innerHTML = siteContent.contact.address.split('t S').join('t<br>S');
-
-
-navBar.prepend(anyThing).style.color = "green";
