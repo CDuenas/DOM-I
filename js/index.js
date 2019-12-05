@@ -42,12 +42,33 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 const navSec = document.querySelectorAll('a');
+
+navSec[0].style.color = "green";
+navSec[1].style.color = "green";
+navSec[2].style.color = "green";
+navSec[3].style.color = "green";
+navSec[4].style.color = "green";
+navSec[5].style.color = "green";
+
 navSec[0].textContent = "Services";
 navSec[1].textContent = "Product"; 
 navSec[2].textContent = "Vision"; 
 navSec[3].textContent = "Features";
 navSec[4].textContent = "About"; 
-navSec[5].textContent = "Contact";   
+navSec[5].textContent = "Contact"; 
+
+const someThing = document.createElement('a');
+const anyThing = document.createElement('a');
+
+someThing.textContent = "Something";
+anyThing.textContent = "Anything";
+
+const navBar = document.querySelector('nav');
+
+navBar.appendChild(someThing).style.color = "green";
+navBar.prepend(anyThing);
+
+
 
 const heading = document.querySelector('h1');
 heading.textContent = "DOM is Awesome!"
@@ -84,3 +105,6 @@ paragraphs[7].textContent = "sales@greatidea.co";
 paragraphs[8].textContent = "Copyright Great Idea! 2018"
 
 paragraphs[5].innerHTML = siteContent.contact.address.split('t S').join('t<br>S');
+
+
+navBar.prepend(anyThing).style.color = "green";
