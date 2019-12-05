@@ -51,9 +51,11 @@ navSec[5].textContent = "Contact";
 
 const heading = document.querySelector('h1');
 heading.textContent = "DOM is Awesome!"
+heading.innerHTML = siteContent.cta.h1.split(' ').join('<br>');
 
 const midImg = document.querySelector('#cta-img');
 midImg.src = "img/header-img.png";
+
 
 const midButton = document.querySelector('button');
 midButton.textContent = "Get Started!";
