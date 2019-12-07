@@ -40,3 +40,69 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const navSec = document.querySelectorAll('a');
+
+navSec[0].style.color = "green";
+navSec[1].style.color = "green";
+navSec[2].style.color = "green";
+navSec[3].style.color = "green";
+navSec[4].style.color = "green";
+navSec[5].style.color = "green";
+
+navSec[0].textContent = "Services";
+navSec[1].textContent = "Product"; 
+navSec[2].textContent = "Vision"; 
+navSec[3].textContent = "Features";
+navSec[4].textContent = "About"; 
+navSec[5].textContent = "Contact"; 
+
+const someThing = document.createElement('a');
+const anyThing = document.createElement('a');
+
+someThing.textContent = "Something";
+anyThing.textContent = "Anything";
+
+const navBar = document.querySelector('nav');
+someThing.style.color = "green";
+anyThing.style.color = "green";
+navBar.appendChild(someThing);
+navBar.prepend(anyThing);
+
+
+
+const heading = document.querySelector('h1');
+heading.textContent = "DOM is Awesome!"
+heading.innerHTML = siteContent.cta.h1.split(' ').join('<br>');
+
+const midImg = document.querySelector('#cta-img');
+midImg.src = "img/header-img.png";
+
+
+const midButton = document.querySelector('button');
+midButton.textContent = "Get Started!";
+
+const secondImg = document.querySelector('.middle-img');
+secondImg.src = "img/mid-page-accent.jpg";
+
+const midHeads = document.querySelectorAll('h4');
+midHeads[0].textContent = "Features";
+midHeads[1].textContent = "About";
+midHeads[2].textContent = "Services";
+midHeads[3].textContent = "Product";
+midHeads[4].textContent = "Vision";
+midHeads[5].textContent = "Contact";
+
+const paragraphs = document.querySelectorAll('p');
+
+paragraphs[0].textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin purus erat, maximus eget venenatis vel, mollis sagittis eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed sodales volutpat dolor. Etiam placerat aliquam sodales.";
+paragraphs[1].textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin purus erat, maximus eget venenatis vel, mollis sagittis eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed sodales volutpat dolor. Etiam placerat aliquam sodales.";
+paragraphs[2].textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin purus erat, maximus eget venenatis vel, mollis sagittis eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed sodales volutpat dolor. Etiam placerat aliquam sodales.";
+paragraphs[3].textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin purus erat, maximus eget venenatis vel, mollis sagittis eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed sodales volutpat dolor. Etiam placerat aliquam sodales.";
+paragraphs[4].textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin purus erat, maximus eget venenatis vel, mollis sagittis eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed sodales volutpat dolor. Etiam placerat aliquam sodales.";
+paragraphs[5].textContent = "123 Way 456 Street Somewhere, USA";
+paragraphs[6].textContent = "1(888) 888-8888";
+paragraphs[7].textContent = "sales@greatidea.co";
+paragraphs[8].textContent = "Copyright Great Idea! 2018"
+
+paragraphs[5].innerHTML = siteContent.contact.address.split('t S').join('t<br>S');
